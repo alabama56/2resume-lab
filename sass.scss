@@ -1,0 +1,34 @@
+@import 'variable';
+@import 'mixins';
+@import 'globals';
+
+*{
+    /* border: 1px solid rgba(0, 0, 0, 0.3) */
+}
+
+body {
+    max-width: 1200px !important;
+}
+
+.carousel {
+    height: 400px!important;
+}
+.info {
+    height: 300px;
+    background-color:$background-color;
+}
+
+.parallax-container {
+    height: 400px!important;
+}
+
+h5 {
+    @include h5padding;
+}
+
+.info2 {
+    padding: 2em 0em;
+    p{
+        font-weight: 100;
+    }
+}

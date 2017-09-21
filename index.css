@@ -1,0 +1,40 @@
+.margin-auto {
+  margin: 0 auto; }
+
+.text {
+  color: white; }
+
+.info2 {
+  height: 500px !important; }
+
+.border-bottom {
+  border-bottom: 3px solid white; }
+
+.margin-top {
+  margin-top: 0; }
+
+* {
+  /* border: 1px solid rgba(0, 0, 0, 0.3) */ }
+
+body {
+  max-width: 1200px !important; }
+
+.carousel {
+  height: 400px !important; }
+
+.info {
+  height: 300px;
+  background-color: black; }
+
+.parallax-container {
+  height: 400px !important; }
+
+h5 {
+  padding: 5px 0; }
+
+.info2 {
+  padding: 2em 0em; }
+  .info2 p {
+    font-weight: 100; }
+
+/*# sourceMappingURL=index.css.map */
