@@ -1,5 +1,5 @@
 .margin-auto {
-    margin: 0 auto;
+    margin: 0 auto!important;
 }
 
 .text {
@@ -11,10 +11,41 @@
 }
 
 .border-bottom {
-    border-bottom: 3px solid white;
+    border-bottom: $border-specs;
 }
 
 .margin-top {
     margin-top: 0;
 }
+
+.info3 {
+    height: 500px!important;
+}
+.info4 {
+    height: 600px!important;
+}
+
+.info5 {
+    height: 10em!important;
+    display: block;
+}
+
+.less-black {
+    background-color: #2d3c2c;
+    font-weight: 100;
+}
+
+h2{
+     font-weight: 100!important;
+     margin-top: 0!important;
+ }
+
+.final {
+    padding: 50px 0px 15px 0px;
+}
+ .footer {
+     border-top: $border-specs;
+     
+ }
+
 

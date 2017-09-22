@@ -1,5 +1,5 @@
 .margin-auto {
-  margin: 0 auto; }
+  margin: 0 auto !important; }
 
 .text {
   color: white; }
@@ -13,21 +13,75 @@
 .margin-top {
   margin-top: 0; }
 
+.info3 {
+  height: 500px !important; }
+
+.info4 {
+  height: 600px !important; }
+
+.info5 {
+  height: 10em !important;
+  display: block; }
+
+.less-black {
+  background-color: #2d3c2c;
+  font-weight: 100; }
+
+h2 {
+  font-weight: 100 !important;
+  margin-top: 0 !important; }
+
+.final {
+  padding: 50px 0px 15px 0px; }
+
+.footer {
+  border-top: 3px solid white; }
+
 * {
-  /* border: 1px solid rgba(0, 0, 0, 0.3) */ }
+  /* border: 1px solid rgba(0, 0, 0, 0.3); */
+  box-sizing: border-box !important; }
+
+nav {
+  background-color: black !important; }
 
 body {
-  max-width: 1200px !important; }
+  max-width: 1200px !important;
+  margin: 0 auto !important; }
 
-.carousel {
+.carousel, .parallax-container {
   height: 400px !important; }
+
+.carousel-item.one {
+  background-image: url(images/landscape-wick.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%; }
+
+.carousel-item.two {
+  background-image: url(images/sad-keanu.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%; }
+
+.carousel-item.three {
+  background-image: url(images/happy.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%; }
+
+.carousel-item.four {
+  background-image: url(images/john-wick-keanu-reeves.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%; }
 
 .info {
   height: 300px;
   background-color: black; }
 
 .parallax-container {
-  height: 400px !important; }
+  display: block !important;
+  overflow: visible !important; }
 
 h5 {
   padding: 5px 0; }
@@ -36,5 +90,31 @@ h5 {
   padding: 2em 0em; }
   .info2 p {
     font-weight: 100; }
+
+.col.s12.m6.l4 {
+  padding: 0 !important;
+  height: 250px;
+  background-position: center;
+  background-size: cover; }
+
+input, textarea {
+  background-color: white !important;
+  border: 1px solid #00ff00 !important; }
+
+input::placeholder, textarea::placeholder {
+  padding-left: 10px; }
+
+textarea {
+  height: 150px !important; }
+
+.button, .button button, .footer {
+  text-align: center; }
+  .button button, .footer button {
+    height: 50px;
+    width: 100px;
+    margin: 8px 0 10px 0;
+    background-color: #00ff00;
+    font-weight: 900;
+    font-size: 18px; }
 
 /*# sourceMappingURL=index.css.map */

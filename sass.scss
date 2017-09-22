@@ -3,23 +3,56 @@
 @import 'globals';
 
 *{
-    /* border: 1px solid rgba(0, 0, 0, 0.3) */
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
+    box-sizing: border-box!important;
+    
+}
+
+nav {
+    background-color: $background-color!important;
 }
 
 body {
     max-width: 1200px !important;
+    margin: 0 auto!important;
 }
 
 .carousel {
     height: 400px!important;
 }
+
+.carousel-item.one {
+    background-image: url(images/landscape-wick.jpg);
+    @include background-specs
+}
+
+.carousel-item.two {
+    background-image: url(images/sad-keanu.jpg);
+    @include background-specs
+    
+}
+
+.carousel-item.three {
+    background-image: url(images/happy.jpg);
+    @include background-specs
+    
+}
+
+.carousel-item.four {
+    background-image: url(images/john-wick-keanu-reeves.jpg);
+    @include background-specs
+}
+
 .info {
     height: 300px;
     background-color:$background-color;
 }
 
 .parallax-container {
-    height: 400px!important;
+    display: block!important;
+    overflow: visible!important;
+    @extend .carousel
+    
 }
 
 h5 {
@@ -31,4 +64,41 @@ h5 {
     p{
         font-weight: 100;
     }
+}
+ 
+.col.s12.m6.l4 {
+    padding: 0!important;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+}
+
+input {
+    @include input-specs;
+}
+
+input::placeholder {
+    padding-left: 10px;
+}
+
+textarea {
+    @extend input;
+    height: 150px!important;
+}
+
+.button {
+    text-align: center;
+    button {
+        height: 50px;
+        width: 100px;
+        @extend .button;
+        margin: 8px 0 10px 0;
+        background-color: $matrix-green;
+        font-weight: 900;
+        font-size: 18px;
+    }
+}
+
+.footer {
+    @extend .button;
 }
