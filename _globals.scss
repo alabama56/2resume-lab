@@ -2,12 +2,20 @@
     margin: 0 auto!important;
 }
 
+
+
 .text {
     color: white;
 }
 
+.main-text {
+    color: white;
+    font-weight: 900;
+}
+
 .info2 {
     height: 500px!important;
+
 }
 
 .border-bottom {
@@ -43,9 +51,7 @@ h2{
 .final {
     padding: 50px 0px 15px 0px;
 }
- .footer {
+
+.footer {
      border-top: $border-specs;
-     
- }
-
-
+}

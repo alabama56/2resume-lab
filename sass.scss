@@ -2,7 +2,7 @@
 @import 'mixins';
 @import 'globals';
 
-*{
+* {
     /* border: 1px solid rgba(0, 0, 0, 0.3); */
     box-sizing: border-box!important;
     
@@ -10,6 +10,11 @@
 
 nav {
     background-color: $background-color!important;
+    div{
+        a{
+            padding-left: 10px!important;
+        }
+    }
 }
 
 body {
@@ -44,14 +49,14 @@ body {
 }
 
 .info {
-    height: 300px;
+    height: 350px;
     background-color:$background-color;
 }
 
 .parallax-container {
     display: block!important;
     overflow: visible!important;
-    @extend .carousel
+    @extend .carousel;
     
 }
 
@@ -99,6 +104,23 @@ textarea {
     }
 }
 
+i{
+    color: white;
+    padding: 0 12px;
+}
+
 .footer {
     @extend .button;
+    align-content: center;
+    p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
+
+@media all and (max-width: 625px) {
+    .info2 {
+        height: 600px!important;
+    }
+ }
